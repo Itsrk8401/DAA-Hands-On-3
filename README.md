@@ -26,3 +26,23 @@ In this code:
 - By zooming in on the plot, you can observe the point where the actual data starts deviating from the fitted curve and bounds.
 - (n_0) is the approximate location where the quadratic behavior becomes dominant.
 - The choice of (n_0) is subjective and depends on the precision you want. It's often the point where the function's behavior changes significantly.
+
+# If I modified the function to be:
+x = f(n)
+   x = 1;
+   y = 1;
+   for i = 1:n
+        for j = 1:n
+             x = x + 1;
+        y = i + j;
+        
+# Will this increase how long it takes the algorithm to run ?
+# Will it effect your results from the original code Time Complexity ? 
+
+Yes, the modification to the function will likely increase the time it takes for the algorithm to run. Let's analyze the modified code:
+
+In this modification, an additional operation (y = i + j) is added inside the inner loop. This operation involves addition, and its complexity is constant time. However, since it is executed (n^2) times (inside the nested loops), it contributes to the overall time complexity.
+
+The time complexity of the original code was O(n^2), where (n) is the input size. With the modification, the time complexity would still be O(n^2) but with a larger constant factor due to the additional operation.
+
+Therefore, the modification increases the amount of work done inside the inner loop, which can result in a longer runtime compared to the original code. The impact on the overall runtime depends on the constant factors involved in the operations and the efficiency of the underlying hardware and compiler optimizations.
