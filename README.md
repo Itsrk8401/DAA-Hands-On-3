@@ -23,7 +23,7 @@ In this code:
 - Big-Theta (Tight Bound): The tight bound is Theta(n^2) as both the upper and lower bounds are quadratic.
 
 # Approximate Location of (n_0):
-In my value range for n theres no certain observation of dominance so no = Seens None for the value range i have considered. Also after plotting the lower bound too i attained a straight unintersecting parabola to the x axis.
+In my value range for n theres no certain observation of dominance so no = 200 where it intersects first . 
 
 # If I modified the function to be:
 x = f(n)
